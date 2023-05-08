@@ -20,6 +20,8 @@ app.get('/', (req, res) =>{
 app.get('/users', (req, res) =>{
     res.send(users)
 })
+
+// For receiving data fromm client site
 app.post('/users', (req, res) =>{
     console.log('post api hitting');
     console.log(req.body);
